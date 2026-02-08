@@ -7,7 +7,7 @@ A minimal starter template for creating React component libraries with TypeScrip
 - ⚛️ **React** - Build reusable React components with JSX
 - 🔷 **TypeScript** - Full type safety with automatic declaration generation
 - ⚡ **tsdown** - Fast bundling powered by Rolldown
-- 🧪 **Bun Test** - Fast built-in test runner
+- 🧪 **Bun Test** - Fast built-in test runner with Happy DOM
 - 🧩 **React Testing Library** - Component testing with user-centric queries
 - 🎨 **Ultracite** - Zero-config linting and formatting with Oxlint + Oxfmt
 - 📦 **ESM** - Ships as ES modules with TypeScript declarations
@@ -33,6 +33,11 @@ bun install
 ```
 
 4. Start developing in `src/index.tsx`.
+
+## 📋 Requirements
+
+- **Bun** 1.3.6+ (for development and testing)
+- **Node.js** 24+ (for npm publishing in CI/CD)
 
 ## 📦 Peer Dependencies
 
@@ -67,7 +72,8 @@ React is listed as a **peer dependency** so consumers use their own React versio
 ├── src/
 │   └── index.tsx         # Package entry point (React components)
 ├── tests/
-│   └── index.test.tsx    # Tests (React Testing Library)
+│   ├── index.test.tsx    # Tests (React Testing Library)
+│   └── setup.ts          # Test setup (Happy DOM)
 ├── dist/                 # Build output (generated)
 ├── .github/
 │   └── workflows/
@@ -79,6 +85,10 @@ React is listed as a **peer dependency** so consumers use their own React versio
 ├── tsdown.config.ts      # Build configuration
 ├── tsconfig.json         # TypeScript configuration
 ├── commitlint.config.ts  # Commit message rules
+├── bunfig.toml          # Bun test configuration
+├── .oxlintrc.json       # Oxlint configuration
+├── .oxfmtrc.jsonc       # Oxfmt configuration
+├── CONTRIBUTING.md      # Contribution guidelines
 └── package.json
 ```
 
@@ -101,6 +111,8 @@ docs: update README
 chore: update dependencies
 ```
 
+**Rules**: Header and body max length is 200 characters (configured in `commitlint.config.ts`).
+
 ## 🔄 CI/CD
 
 ### Continuous Integration
@@ -112,12 +124,14 @@ On every push to `main` and pull request, the CI workflow runs:
 - ✅ Tests
 - ✅ Build
 
+Uses **Bun 1.3.6** for all operations.
+
 ### Automated Releases
 
 When you push a version tag (`v*`), the release workflow:
 
-1. Runs all CI checks
-2. Publishes to npm with provenance
+1. Runs all CI checks (using Bun 1.3.6)
+2. Publishes to npm with provenance (using Node.js 24)
 3. Creates a GitHub release with auto-generated notes
 
 ### Setup for Publishing (Trusted Publishing)
@@ -151,8 +165,14 @@ git push --tags
 Or publish manually:
 
 ```bash
-bun publish
+npm publish --provenance --access public
 ```
+
+Note: The release workflow uses `npm publish` (not `bun publish`) for npm Trusted Publishing compatibility.
+
+## 🤝 Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines on contributing to this project.
 
 ## 📄 License
 
