@@ -1,24 +1,25 @@
-import { type ReactNode, useCallback, useState } from "react";
+import { type ButtonHTMLAttributes, useCallback, useState } from "react";
 
-export interface ButtonProps {
-  children: ReactNode;
-  onClick?: () => void;
+export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: "primary" | "secondary";
 }
 
 export const Button = ({
   children,
-  onClick,
   variant = "primary",
+  className,
+  ...rest
 }: ButtonProps) => (
   <button
     type="button"
-    onClick={onClick}
-    className={`button button--${variant}`}
+    className={`button button--${variant}${className ? ` ${className}` : ""}`}
+    {...rest}
   >
     {children}
   </button>
 );
+
+Button.displayName = "Button";
 
 export const useToggle = (initialValue = false) => {
   const [value, setValue] = useState(initialValue);

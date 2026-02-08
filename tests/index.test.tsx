@@ -39,6 +39,28 @@ describe("Button", () => {
     await user.click(screen.getByText("Click"));
     expect(handleClick).toHaveBeenCalledTimes(1);
   });
+
+  it("passes through the disabled prop", () => {
+    render(<Button disabled>Disabled</Button>);
+    expect(screen.getByText("Disabled")).toHaveProperty("disabled", true);
+  });
+
+  it("passes through aria-label", () => {
+    render(<Button aria-label="Close dialog">X</Button>);
+    expect(screen.getByLabelText("Close dialog")).toBeDefined();
+  });
+
+  it("merges custom className with variant class", () => {
+    render(<Button className="custom">Styled</Button>);
+    expect(screen.getByText("Styled").className).toBe(
+      "button button--primary custom"
+    );
+  });
+
+  it("spreads rest props onto the button element", () => {
+    render(<Button data-testid="my-button">Test</Button>);
+    expect(screen.getByTestId("my-button")).toBeDefined();
+  });
 });
 
 describe("useToggle", () => {

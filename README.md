@@ -37,7 +37,7 @@ bun install
 ## 📋 Requirements
 
 - **Bun** 1.3.6+ (for development and testing)
-- **Node.js** 24+ (for npm publishing in CI/CD)
+- **Node.js** 22+ (enforced via `engines` field; 24+ used in CI/CD for publishing)
 
 ## 📦 Peer Dependencies
 
@@ -124,13 +124,13 @@ On every push to `main` and pull request, the CI workflow runs:
 - ✅ Tests
 - ✅ Build
 
-Uses **Bun 1.3.6** for all operations.
+Uses **Bun 1.3.8** for all operations.
 
 ### Automated Releases
 
 When you push a version tag (`v*`), the release workflow:
 
-1. Runs all CI checks (using Bun 1.3.6)
+1. Runs the CI workflow (lint, typecheck, build, test)
 2. Publishes to npm with provenance (using Node.js 24)
 3. Creates a GitHub release with auto-generated notes
 
