@@ -8,7 +8,7 @@ import {
 import { userEvent } from "@testing-library/user-event";
 import { afterEach, describe, expect, it, mock } from "bun:test";
 
-import { Button, useToggle } from "../src";
+import { Button, formatDate, useToggle } from "../src";
 
 afterEach(cleanup);
 
@@ -92,5 +92,26 @@ describe("useToggle", () => {
     const { result } = renderHook(() => useToggle(true));
     act(() => result.current.setFalse());
     expect(result.current.value).toBe(false);
+  });
+});
+
+describe("formatDate", () => {
+  it("formats a Date object", () => {
+    const date = new Date("2024-01-15");
+    expect(formatDate(date)).toContain("January");
+    expect(formatDate(date)).toContain("15");
+    expect(formatDate(date)).toContain("2024");
+  });
+
+  it("formats a date string", () => {
+    const result = formatDate("2024-01-15");
+    expect(result).toContain("January");
+    expect(result).toContain("15");
+  });
+
+  it("formats a timestamp", () => {
+    const timestamp = new Date("2024-01-15").getTime();
+    const result = formatDate(timestamp);
+    expect(result).toContain("January");
   });
 });

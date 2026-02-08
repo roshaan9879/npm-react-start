@@ -28,3 +28,11 @@ export const useToggle = (initialValue = false) => {
   const setFalse = useCallback(() => setValue(false), []);
   return { value, toggle, setTrue, setFalse } as const;
 };
+
+// Example utility function
+export const formatDate = (date: Date | string | number): string =>
+  new Date(date).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });

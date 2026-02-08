@@ -1,14 +1,14 @@
 # ⚛️ npm-react-start
 
-A minimal starter template for creating React component libraries with TypeScript.
+A minimal starter template for creating React libraries with TypeScript. Build components, hooks, utilities, and more.
 
 ## ✨ Features
 
-- ⚛️ **React** - Build reusable React components with JSX
+- ⚛️ **React** - Build reusable React code (components, hooks, utilities) with JSX
 - 🔷 **TypeScript** - Full type safety with automatic declaration generation
 - ⚡ **tsdown** - Fast bundling powered by Rolldown
 - 🧪 **Bun Test** - Fast built-in test runner with Happy DOM
-- 🧩 **React Testing Library** - Component testing with user-centric queries
+- 🧩 **React Testing Library** - Testing for components and hooks with user-centric queries
 - 🎨 **Ultracite** - Zero-config linting and formatting with Oxlint + Oxfmt
 - 📦 **ESM** - Ships as ES modules with TypeScript declarations
 - 🚀 **GitHub Actions** - CI/CD pipeline with automated testing and npm publishing
@@ -20,8 +20,8 @@ A minimal starter template for creating React component libraries with TypeScrip
 1. Clone or use this template:
 
 ```bash
-git clone https://github.com/dobroslavradosavljevic/npm-react-start.git my-component-library
-cd my-component-library
+git clone https://github.com/dobroslavradosavljevic/npm-react-start.git my-react-library
+cd my-react-library
 ```
 
 2. Update `package.json` with your package name, description, and author info.
@@ -41,7 +41,7 @@ bun install
 
 ## 📦 Peer Dependencies
 
-This starter is configured for React component libraries. Consumers of your package must have React installed:
+This starter is configured for React libraries. Consumers of your package must have React installed:
 
 ```json
 {
@@ -70,7 +70,7 @@ React is listed as a **peer dependency** so consumers use their own React versio
 
 ```txt
 ├── src/
-│   └── index.tsx         # Package entry point (React components)
+│   └── index.tsx         # Package entry point (components, hooks, utilities)
 ├── tests/
 │   ├── index.test.tsx    # Tests (React Testing Library)
 │   └── setup.ts          # Test setup (Happy DOM)

@@ -1,13 +1,14 @@
 {
   "name": "npm-react-start",
   "version": "1.0.0",
-  "description": "A starter for creating React component libraries.",
+  "description": "A starter for creating React libraries (components, hooks, utilities).",
   "keywords": [
-    "component-library",
     "npm",
     "package",
     "react",
-    "react-component",
+    "react-components",
+    "react-hooks",
+    "react-library",
     "typescript"
   ],
   "homepage": "https://github.com/DobroslavRadosavljevic/npm-react-start#readme",

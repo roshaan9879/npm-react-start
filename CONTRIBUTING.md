@@ -6,7 +6,7 @@ Thanks for your interest in contributing!
 
 1. Fork and clone the repository
 2. Install dependencies: `bun install`
-3. Make your changes in `src/` (`.tsx` files for React components)
+3. Make your changes in `src/` (`.tsx` files for React code, `.ts` for utilities)
 4. Run tests: `bun test`
 5. Run linting: `bun run lint`
 6. Submit a pull request
@@ -14,7 +14,7 @@ Thanks for your interest in contributing!
 ## Guidelines
 
 - Follow the existing code style (enforced by Ultracite)
-- Write tests for new components using React Testing Library
+- Write tests for new code using React Testing Library (components/hooks) or Bun Test (utilities)
 - Keep commits focused and descriptive
 - Update documentation as needed
 
